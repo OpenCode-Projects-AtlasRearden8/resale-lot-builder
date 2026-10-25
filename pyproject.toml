@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resale-lot-builder"
+version = "0.1.0"
+description = "Local-first CLI that bundles a reseller's stash into lots: group by theme or brand, forecast lot profit vs. selling separately with your own fee-rate configs, and draft ready-to-paste listings."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Asdale Dynamics, LLC" }]
+keywords = ["reselling", "ebay", "amazon", "flipping", "lots", "inventory", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Office/Business :: Financial",
+]
+[project.scripts]
+resale-lot-builder = "resale_lot_builder.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["resale_lot_builder*"]
+
+[tool.setuptools.package-data]
+resale_lot_builder = ["configs/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

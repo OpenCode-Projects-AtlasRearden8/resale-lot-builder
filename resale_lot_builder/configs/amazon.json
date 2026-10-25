@@ -1,0 +1,16 @@
+{
+  "platform": "Amazon",
+  "final_value_fee_pct": 15.0,
+  "fixed_fee_per_order": 0.99,
+  "shipping_cost_per_lot": 8.00,
+  "shipping_cost_per_item": 6.50,
+  "default_markup_multiplier": 2.5,
+  "condition_multipliers": {
+    "NEW": 1.0,
+    "LN": 0.88,
+    "VG": 0.78,
+    "G": 0.68,
+    "A": 0.55
+  },
+  "notes": "EXAMPLE NUMBERS ONLY. Amazon referral fees are category-specific (usually near 15% for media/small goods) and tied to a seller plan. Run `resale-lot-builder fees init`, then edit fees/amazon.json to match your account."
+}

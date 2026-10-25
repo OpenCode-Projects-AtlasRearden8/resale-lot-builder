@@ -1,0 +1,16 @@
+{
+  "platform": "eBay",
+  "final_value_fee_pct": 13.25,
+  "fixed_fee_per_order": 0.30,
+  "shipping_cost_per_lot": 7.00,
+  "shipping_cost_per_item": 5.00,
+  "default_markup_multiplier": 3.0,
+  "condition_multipliers": {
+    "NEW": 1.0,
+    "LN": 0.9,
+    "VG": 0.8,
+    "G": 0.7,
+    "A": 0.6
+  },
+  "notes": "EXAMPLE NUMBERS ONLY. eBay final value fees vary widely by category, store level, and promotions. Run `resale-lot-builder fees init`, then edit fees/ebay.json to match what your account actually charges."
+}
