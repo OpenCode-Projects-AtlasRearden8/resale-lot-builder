@@ -1,16 +1,21 @@
-__pycache__/
-*.py[cod]
-.pytest_cache/
-*.egg-info/
-build/
-dist/
-.coverage
-htmlcov/
-venv/
-.venv/
 
 # Runtime data — this is YOUR stash, not repo content
-stash.csv
-lots.csv
+*.egg-info/
+*.py[cod]
+*.pyc
+.coverage
+.env
+.env.*
+.pytest_cache/
+.venv/
+__pycache__/
+build/
+dist/
+dist/*.tmp
 fees/
+htmlcov/
 listings/
+lots.csv
+node_modules/
+stash.csv
+venv/
